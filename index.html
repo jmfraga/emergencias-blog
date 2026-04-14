@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesores en Emergencias | Blog</title>
+  <meta name="description" content="Blog de Asesores en Emergencias y Desastres — Consultoría, capacitación y recursos en gestión de emergencias.">
+  <meta property="og:title" content="Asesores en Emergencias | Blog">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://blog.emergenciasenlinea.com">
+  <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { red: '#DC2626', redDark: '#991B1B', orange: '#EA580C', orangeLight: '#F97316', gray: '#374151' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], serif: ['Playfair Display', 'Georgia', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-brand-red flex items-center justify-center text-white font-bold text-lg">AE</div>
+          <div>
+            <span class="font-bold text-gray-900 text-lg leading-none block">Asesores en Emergencias</span>
+            <span class="text-xs text-brand-red font-medium">Blog</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/#articulos" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Artículos</a>
+          <a href="https://emergenciasenlinea.com" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Emergenciasenlinea.com</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-r from-brand-redDark to-brand-red py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-white mb-4">Consultoría y Capacitación en Emergencias</h1>
+      <p class="text-white/80 text-lg">Recursos, análisis y perspectivas sobre gestión de emergencias y desastres en México y Latinoamérica.</p>
+    </div>
+  </section>
+
+  <section id="articulos" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="font-serif text-3xl font-bold text-gray-900">Artículos</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card-hover bg-white rounded-2xl border border-gray-100 p-6 text-center">
+        <div class="text-4xl mb-3">🚨</div>
+        <h3 class="font-bold text-gray-900 mb-2">Próximamente</h3>
+        <p class="text-sm text-gray-500">Contenido sobre gestión de emergencias y desastres.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-brand-red py-6">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="font-serif text-xl font-bold text-white mb-2">¿Necesitas consultoría en emergencias?</h2>
+      <p class="text-white/80 mb-4 text-sm">Contacta a nuestro equipo para diseñar tu plan de emergencias.</p>
+      <a href="https://emergenciasenlinea.com" class="inline-block bg-white text-brand-red font-semibold px-6 py-3 rounded-xl hover:bg-gray-100 transition-colors">Visítanos →</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white/60 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <div class="flex items-center justify-center gap-2 mb-3">
+        <div class="w-8 h-8 rounded-lg bg-brand-red flex items-center justify-center text-white font-bold text-sm">AE</div>
+        <span class="font-bold text-white">Asesores en Emergencias</span>
+      </div>
+      <p class="text-sm text-white/50 mb-4">Consultoría en Emergencias y Desastres. Querétaro, Qro., México.</p>
+      <a href="https://emergenciasenlinea.com" class="text-white/40 hover:text-brand-orange text-sm transition-colors">Emergenciasenlinea.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
