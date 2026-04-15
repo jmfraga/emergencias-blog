@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asesores en Emergencias | Blog</title>
-  <meta name="description" content="Blog de Asesores en Emergencias y Desastres — Consultoría, capacitación y recursos en gestión de emergencias.">
-  <meta property="og:title" content="Asesores en Emergencias | Blog">
-  <meta property="og:type" content="website">
-  <link rel="canonical" href="https://blog.emergenciasenlinea.com">
   <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+  <title>Blog | Asesores en Emergencias</title>
+  <meta name="description" content="Blog de Asesores en Emergencias — Artículos sobre simulación clínica, formación médica continua y las últimas tendencias en educación médica de emergencia.">
+  <meta property="og:title" content="Blog | Asesores en Emergencias">
+  <meta property="og:description" content="Artículos sobre simulación clínica, formación médica continua y las últimas tendencias en educación médica de emergencia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blog.emergencias.com.mx">
+  <link rel="canonical" href="https://blog.emergencias.com.mx">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -17,9 +19,18 @@
       theme: {
         extend: {
           colors: {
-            brand: { red: '#DC2626', redDark: '#991B1B', orange: '#EA580C', orangeLight: '#F97316', gray: '#374151' }
+            brand: {
+              red: '#DC2626',
+              redLight: '#F87171',
+              redDark: '#991B1B',
+              black: '#0F0F0F',
+              white: '#FFFFFF',
+            }
           },
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], serif: ['Playfair Display', 'Georgia', 'serif'] }
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          }
         }
       }
     }
@@ -29,66 +40,222 @@
     .font-serif { font-family: 'Playfair Display', Georgia, serif; }
     .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
     .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
-  </style>
+    .tag-pill { transition: background 0.15s ease; }
+    .tag-pill:hover { background: #DC2626; color: white; }
+    footer#contacto { position: relative; z-index: 10; }
+</style>
+
+
 </head>
 <body class="bg-white text-gray-900 antialiased">
 
+  <!-- HEADER -->
   <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16">
         <a href="/" class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg bg-brand-red flex items-center justify-center text-white font-bold text-lg">AE</div>
+          <img src="assets/logos/SimAcademyLogo-v3.png" alt="Asesores en Emergencias" class="h-10">
           <div>
             <span class="font-bold text-gray-900 text-lg leading-none block">Asesores en Emergencias</span>
             <span class="text-xs text-brand-red font-medium">Blog</span>
           </div>
         </a>
         <nav class="hidden md:flex items-center gap-6">
-          <a href="/#articulos" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Artículos</a>
-          <a href="https://emergenciasenlinea.com" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Emergenciasenlinea.com</a>
+          <a href="#articulos" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Artículos</a>
+          <a href="#categorias" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Categorías</a>
+          <a href="https://emergencias.com.mx" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">emergencias.com.mx</a>
+          <a href="#contacto" class="text-sm font-semibold bg-brand-red text-white px-4 py-2 rounded-lg hover:bg-brand-redDark transition-colors">Contacto</a>
         </nav>
       </div>
     </div>
   </header>
 
-  <section class="bg-gradient-to-r from-brand-redDark to-brand-red py-16">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <h1 class="font-serif text-4xl md:text-5xl font-bold text-white mb-4">Consultoría y Capacitación en Emergencias</h1>
-      <p class="text-white/80 text-lg">Recursos, análisis y perspectivas sobre gestión de emergencias y desastres en México y Latinoamérica.</p>
+  <!-- HERO / FEATURED POST -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="order-2 md:order-1">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-xs font-bold text-white bg-brand-red px-3 py-1 rounded-full uppercase tracking-wide">Destacado</span>
+          <span class="text-xs text-gray-500">20 abril, 2026 · Lectura de 7 min</span>
+        </div>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          El error médico más común en urgencias y cómo la <span class="text-brand-red">simulación lo previene</span>
+        </h1>
+        <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+          No es un error de diagnóstico. No es un error de prescripción. Es la falla en la comunicación durante la transferencia de pacientes — y es prevenible.
+        </p>
+        <div class="flex items-center gap-4 mb-6">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center text-white text-xs font-bold">JM</div>
+            <span class="text-sm text-gray-700 font-medium">Juan Manuel Fraga</span>
+          </div>
+        </div>
+        <a href="posts/2026-04-20-error-mas-comun-urgencias.html" class="inline-flex items-center gap-2 bg-brand-red text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-redDark transition-colors">
+          Leer artículo completo
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+      <div class="order-1 md:order-2">
+        <div class="rounded-2xl overflow-hidden bg-gradient-to-br from-brand-red to-gray-900 aspect-[4/3] flex items-center justify-center">
+          <div class="text-center text-white p-8">
+            <div class="text-6xl mb-4">🏥</div>
+            <p class="font-serif text-2xl font-bold">Comunicación en Urgencias</p>
+            <p class="text-white/80 text-sm mt-2">El error invisible</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- CATEGORIES STRIP -->
+  <section id="categorias" class="bg-gray-50 border-y border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+      <div class="flex items-center gap-2 overflow-x-auto scrollbar-hide">
+        <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide shrink-0">Categorías:</span>
+        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-brand-red text-brand-red bg-white">Simulación Clínica</button>
+        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">Educación Médica</button>
+        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">Casos Clínicos</button>
+        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">IA en Medicina</button>
+        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">Seguridad del Paciente</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE POSTS -->
   <section id="articulos" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <div class="flex items-center justify-between mb-8">
-      <h2 class="font-serif text-3xl font-bold text-gray-900">Artículos</h2>
+      <h2 class="font-serif text-3xl font-bold text-gray-900">Más artículos</h2>
     </div>
+
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="card-hover bg-white rounded-2xl border border-gray-100 p-6 text-center">
-        <div class="text-4xl mb-3">🚨</div>
-        <h3 class="font-bold text-gray-900 mb-2">Próximamente</h3>
-        <p class="text-sm text-gray-500">Contenido sobre gestión de emergencias y desastres.</p>
-      </div>
+
+      <!-- Post Card -->
+      <article class="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden">
+        <div class="bg-gradient-to-br from-red-600 to-red-400 aspect-[16/9] flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="text-4xl mb-2">🤖</div>
+            <p class="text-xs font-medium text-white/80">IA</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">IA en Medicina</span>
+            <span class="text-xs text-gray-400">6 min</span>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2 leading-snug hover:text-brand-red transition-colors cursor-pointer">IA en la formación médica: lo que sí puede hacer y lo que no</h3>
+          <p class="text-sm text-gray-500 mb-4 leading-relaxed">Casos de uso reales de IA como complemento en la formación de profesionales de la salud.</p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1.5">
+              <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500">PX</div>
+              <span class="text-xs text-gray-500">Phoenix AI</span>
+            </div>
+            <span class="text-xs text-gray-400">Próximamente</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post Card -->
+      <article class="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden">
+        <div class="bg-gradient-to-br from-gray-900 to-gray-700 aspect-[16/9] flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="text-4xl mb-2">💻</div>
+            <p class="text-xs font-medium text-white/80">Simulación</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Simulación Clínica</span>
+            <span class="text-xs text-gray-400">7 min</span>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2 leading-snug hover:text-brand-red transition-colors cursor-pointer">Por qué los simuladores de alta fidelidad no son un lujo sino una necesidad</h3>
+          <p class="text-sm text-gray-500 mb-4 leading-relaxed">Guía práctica para instituciones que buscan invertir en simulación clínica de alto impacto.</p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1.5">
+              <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500">JM</div>
+              <span class="text-xs text-gray-500">J.M. Fraga</span>
+            </div>
+            <span class="text-xs text-gray-400">Próximamente</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post Card -->
+      <article class="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden">
+        <div class="bg-gradient-to-br from-brand-red to-red-400 aspect-[16/9] flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="text-4xl mb-2">🧠</div>
+            <p class="text-xs font-medium text-white/80">Neurociencia</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Educación Médica</span>
+            <span class="text-xs text-gray-400">5 min</span>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2 leading-snug hover:text-brand-red transition-colors cursor-pointer">Cómo la neurociencia está redefiniendo el aprendizaje en medicina</h3>
+          <p class="text-sm text-gray-500 mb-4 leading-relaxed">Los últimos estudios sobre memoria y retención de conocimiento están cambiando el diseño de programas médicos.</p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1.5">
+              <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500">JM</div>
+              <span class="text-xs text-gray-500">J.M. Fraga</span>
+            </div>
+            <span class="text-xs text-gray-400">Próximamente</span>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <section class="bg-brand-red py-6">
+<!-- NEWSLETTER + FOOTER WRAPPER -->
+<div class="relative" style="z-index:1">
+
+<!-- NEWSLETTER -->
+  <section class="bg-brand-red py-6 relative" style="z-index:1">
     <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="font-serif text-xl font-bold text-white mb-2">¿Necesitas consultoría en emergencias?</h2>
-      <p class="text-white/80 mb-4 text-sm">Contacta a nuestro equipo para diseñar tu plan de emergencias.</p>
-      <a href="https://emergenciasenlinea.com" class="inline-block bg-white text-brand-red font-semibold px-6 py-3 rounded-xl hover:bg-gray-100 transition-colors">Visítanos →</a>
+      <h2 class="font-serif text-xl font-bold text-white mb-2">Sigamos la conversación</h2>
+      <p class="text-white/80 mb-4 text-sm">Recibe contenido exclusivo sobre simulación clínica y educación médica de emergencia directamente en tu correo.</p>
+      <p><a href="https://emergencias.com.mx/suscripcion" class="inline-block bg-gray-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-black transition-colors">Visita nuestra página →</a></p>
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-white/60 py-10">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-      <div class="flex items-center justify-center gap-2 mb-3">
-        <div class="w-8 h-8 rounded-lg bg-brand-red flex items-center justify-center text-white font-bold text-sm">AE</div>
-        <span class="font-bold text-white">Asesores en Emergencias</span>
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-gray-900 text-white/60 py-12 relative z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid sm:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <img src="assets/logos/SimAcademyLogo-v3.png" alt="Asesores en Emergencias" class="h-8 brightness-0 invert">
+            <span class="font-bold text-white text-lg">Asesores en Emergencias</span>
+          </div>
+          <p class="text-sm text-white/60 leading-relaxed">Educación Médica y Simulación Clínica de Alta Calidad en México y Latinoamérica.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-3">Explorar</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://emergencias.com.mx" class="hover:text-brand-redLight transition-colors">emergencias.com.mx</a></li>
+            <li><a href="#articulos" class="hover:text-brand-redLight transition-colors">Blog</a></li>
+            <li><a href="https://emergencias.com.mx/oferta-educativa/calendario" class="hover:text-brand-redLight transition-colors">Cursos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-3">Contacto</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Querétaro, Qro., México</li>
+            <li>contacto@emergencias.com.mx</li>
+          </ul>
+        </div>
       </div>
-      <p class="text-sm text-white/50 mb-4">Consultoría en Emergencias y Desastres. Querétaro, Qro., México.</p>
-      <a href="https://emergenciasenlinea.com" class="text-white/40 hover:text-brand-orange text-sm transition-colors">Emergenciasenlinea.com</a>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs">© 2026 Asesores en Emergencias. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.linkedin.com/in/juanmfraga/" class="text-white/40 hover:text-brand-redLight transition-colors text-sm">LinkedIn</a>
+          <a href="https://instagram.com/asesoresenemergencias" class="text-white/40 hover:text-brand-redLight transition-colors text-sm">Instagram</a>
+        </div>
+      </div>
     </div>
   </footer>
 
+</div>
 </body>
 </html>
