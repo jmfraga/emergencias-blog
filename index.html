@@ -42,10 +42,7 @@
     .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
     .tag-pill { transition: background 0.15s ease; }
     .tag-pill:hover { background: #DC2626; color: white; }
-    footer#contacto { position: relative; z-index: 10; }
-</style>
-
-
+  </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
 
@@ -61,8 +58,6 @@
           </div>
         </a>
         <nav class="hidden md:flex items-center gap-6">
-          <a href="#articulos" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Artículos</a>
-          <a href="#categorias" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Categorías</a>
           <a href="https://www2.emergencias.com.mx" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">www2.emergencias.com.mx</a>
           <a href="#contacto" class="text-sm font-semibold bg-brand-red text-white px-4 py-2 rounded-lg hover:bg-brand-redDark transition-colors">Contacto</a>
         </nav>
@@ -70,376 +65,98 @@
     </div>
   </header>
 
-  <!-- HERO / FEATURED POST -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div class="order-2 md:order-1">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="text-xs font-bold text-white bg-brand-red px-3 py-1 rounded-full uppercase tracking-wide">Destacado</span>
-          <span class="text-xs text-gray-500">24 abril, 2026 · Lectura de 8 min</span>
-        </div>
-        <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-          Desfibrilación temprana: por qué cada segundo cuenta
-        </h1>
-        <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-          La desfibrilación en los primeros minutos tras un paro cardíaco puede duplicar — o más — las probabilidades de supervivencia. En México, la brecha en el acceso a esta intervención sigue siendo la deuda más grande de la cadena de supervivencia.
-        </p>
-        <div class="flex items-center gap-4 mb-6">
-          <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center text-white text-xs font-bold">AE</div>
-            <span class="text-sm text-gray-700 font-medium">José Luis Pérez Espino</span>
-          </div>
-        </div>
-        <a href="#desfibrilacion-temprana" class="inline-flex items-center gap-2 bg-brand-red text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-redDark transition-colors">
-          Leer artículo
-        </a>
-      </div>
-      <div class="order-1 md:order-2">
-        <div class="rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="assets/images/desfibrilacion-temprana/hero.jpg" alt="Desfibrilación temprana" class="w-full h-full object-cover">
-        </div>
-      </div>
-    </div>
+  <!-- INTRO -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 py-16 text-center">
+    <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+      Blog de Asesores en Emergencias
+    </h1>
+    <p class="text-gray-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+      Artículos sobre simulación clínica, formación médica continua y las últimas tendencias en educación médica de emergencia. Porque salvar vidas se aprende — y se enseña.
+    </p>
   </section>
 
-  <!-- CATEGORIES STRIP -->
-  <section id="categorias" class="bg-gray-50 border-y border-gray-100">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
-      <div class="flex items-center gap-2 overflow-x-auto scrollbar-hide">
-        <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide shrink-0">Categorías:</span>
-        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-brand-red text-brand-red bg-white">Educación Médica</button>
-        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">Simulación Clínica</button>
-        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">Casos Clínicos</button>
-        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">IA en Medicina</button>
-        <button class="tag-pill shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white">Seguridad del Paciente</button>
-      </div>
-    </div>
-  </section>
+  <!-- ARTICLES GRID -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-20">
+    <div class="grid sm:grid-cols-2 gap-8">
 
-  <!-- MORE POSTS -->
-  <section id="articulos" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="font-serif text-3xl font-bold text-gray-900">Más artículos</h2>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Post Card -->
-      <article id="rcp-alta-calidad" class="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden">
-        <div class="aspect-[16/9] overflow-hidden">
-          <img src="assets/images/rcp-alta-calidad/thumb.jpg" alt="RCP de alta calidad" class="w-full h-full object-cover">
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Educación Médica</span>
-            <span class="text-xs text-gray-400">7 min</span>
-          </div>
-          <h3 class="font-bold text-gray-900 mb-2 leading-snug hover:text-brand-red transition-colors cursor-pointer">RCP de alta calidad: qué cambia entre hacerlo bien y solo hacerlo</h3>
-          <p class="text-sm text-gray-500 mb-4 leading-relaxed">Cada año miles de personas sufren un paro cardíaco repentino fuera del hospital. En la mayoría de los casos, quien presencia el evento actúa con las mejores intenciones, pero sin la técnica adecuada.</p>
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-1.5">
-              <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500">AE</div>
-              <span class="text-xs text-gray-500">José Luis Pérez Espino</span>
-            </div>
-            <span class="text-xs text-gray-400">21 abril, 2026</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Post Card -->
-      <article class="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden">
+      <!-- Card: Desfibrilación -->
+      <article class="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden cursor-pointer" onclick="window.location='desfibrilacion-temprana.html'">
         <div class="aspect-[16/9] overflow-hidden">
           <img src="assets/images/desfibrilacion-temprana/thumb.jpg" alt="Desfibrilación temprana" class="w-full h-full object-cover">
         </div>
-        <div class="p-5">
+        <div class="p-6">
           <div class="flex items-center gap-2 mb-3">
             <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Educación Médica</span>
             <span class="text-xs text-gray-400">8 min</span>
-          </div>
-          <h3 class="font-bold text-gray-900 mb-2 leading-snug hover:text-brand-red transition-colors cursor-pointer">Desfibrilación temprana: por qué cada segundo cuenta</h3>
-          <p class="text-sm text-gray-500 mb-4 leading-relaxed">La desfibrilación en los primeros minutos tras un paro cardíaco puede duplicar las probabilidades de supervivencia. En México, la brecha en el acceso a esta intervención sigue siendo la deuda más grande de la cadena de supervivencia.</p>
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-1.5">
-              <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500">AE</div>
-              <span class="text-xs text-gray-500">José Luis Pérez Espino</span>
-            </div>
+            <span class="text-xs text-gray-400">·</span>
             <span class="text-xs text-gray-400">24 abril, 2026</span>
+          </div>
+          <h2 class="font-serif text-2xl font-bold text-gray-900 mb-3 leading-snug hover:text-brand-red transition-colors">
+            Desfibrilación temprana: por qué cada segundo cuenta
+          </h2>
+          <p class="text-gray-500 leading-relaxed">
+            La desfibrilación en los primeros minutos tras un paro cardíaco puede duplicar — o más — las probabilidades de supervivencia. En México, la brecha en el acceso a esta intervención sigue siendo la deuda más grande de la cadena de supervivencia.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-brand-red font-semibold text-sm">
+            Leer artículo
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
           </div>
         </div>
       </article>
 
-    </div>
-  </section>
+      <!-- Card: RCP -->
+      <article class="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden cursor-pointer" onclick="window.location='rcp-alta-calidad.html'">
+        <div class="aspect-[16/9] overflow-hidden">
+          <img src="assets/images/rcp-alta-calidad/thumb.jpg" alt="RCP de alta calidad" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Educación Médica</span>
+            <span class="text-xs text-gray-400">7 min</span>
+            <span class="text-xs text-gray-400">·</span>
+            <span class="text-xs text-gray-400">21 abril, 2026</span>
+          </div>
+          <h2 class="font-serif text-2xl font-bold text-gray-900 mb-3 leading-snug hover:text-brand-red transition-colors">
+            RCP de alta calidad: qué cambia entre hacerlo bien y solo hacerlo
+          </h2>
+          <p class="text-gray-500 leading-relaxed">
+            Cada año miles de personas sufren un paro cardíaco repentino fuera del hospital. En la mayoría de los casos, quien presencia el evento actúa con las mejores intenciones, pero sin la técnica adecuada.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-brand-red font-semibold text-sm">
+            Leer artículo
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </article>
 
-  <!-- FULL ARTICLE CONTENT -->
-  <section class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-    <div class="prose prose-lg max-w-none">
-      <p class="text-xl text-gray-600 leading-relaxed mb-8 border-l-4 border-brand-red pl-6">
-        Cada año miles de personas sufren un paro cardíaco repentino fuera del hospital. En la mayoría de los casos, quien presencia el evento no sabe nadar en aguas desconocidas: actúa con las mejores intenciones, pero sin la técnica adecuada. Y en la reanimación cardiopulmonar, la diferencia entre hacerlo bien y solo hacerlo puede ser literalmente cuestión de vida o muerte.
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">¿Qué significa RCP de alta calidad?</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        El RCP de alta calidad es el conjunto de técnicas y parámetros que maximizan la efectividad de la reanimación. No basta con empujar el esternón hacia abajo. Hay que hacerlo con la fuerza correcta, a la velocidad correcta, permitiendo la recoil completa del tórax entre cada compresión, y minimizando al máximo las interrupciones.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        La American Heart Association (AHA) lo resume en cinco pilares:
-      </p>
-      <ol class="list-decimal list-inside text-gray-600 space-y-3 mb-8 pl-4">
-        <li><strong>Profundidad adecuada:</strong> en adultos, comprimir al menos 5 centímetros, pero sin superar los 6 centímetros.</li>
-        <li><strong>Ritmo correcto:</strong> entre 100 y 120 compresiones por minuto. Ni más lento, ni más rápido.</li>
-        <li><strong>Recoil completo:</strong> permitir que el tórax se expanda completamente después de cada compresión. No quedarse "apoyado" sobre el pecho.</li>
-        <li><strong>Minimizar las pausas:</strong> evitar interrupciones en las compresiones torácicas. Cada segundo sin flujo sanguíneo cuenta.</li>
-        <li><strong>Ventilaciones efectivas:</strong> administrar volumen suficiente para que los pulmones se expandan sin sobreinsuflar.</li>
-      </ol>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">La diferencia entre solo hacerlo y hacerlo bien</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Aquí es donde la evidencia científica cambia las reglas del juego.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Un estudio publicado en <em>Circulation</em> demostró que las tasas de supervivencia en paros cardíacos extrahospitalarios aumentan hasta un <strong>50%</strong> cuando los testigos aplican RCP con la técnica correcta. Otro dato igual de revelador: cuando las compresiones son demasiado superficiales (&lt; 4 cm), la supervivencia se reduce significativamente, incluso cuando se inicia la reanimación a tiempo.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-6">
-        ¿Y por qué pasa esto? Porque durante un paro cardíaco, el corazón ya no bombea sangre. Cada compresión torácica funciona como un sustituto temporal de la función de bomba. Si esa compresión es débil o intermitente, el flujo sanguíneo que se genera es insuficiente para mantener vivos los órganos, especialmente el cerebro.
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">Escenarios donde la diferencia se nota</h2>
-      <ul class="list-disc list-inside text-gray-600 space-y-3 mb-8 pl-4">
-        <li><strong>Fibrilación ventricular:</strong> el corazón late en un ritmo caótico. La única forma de restaurarlo es aplicando una descarga (desfibrilación) mientras el RCP de alta calidad mantiene la irrigación cerebral. Un RCP deficiente antes de la descarga reduce las probabilidades de éxito.</li>
-        <li><strong>Tiempo de respuesta prolongado:</strong> si los servicios de emergencias demoran más de 8 minutos en llegar, el tejido cerebral empieza a sufrir daños irreversibles. Cada minuto de RCP de alta calidad ganado es tejido cerebral protegido.</li>
-        <li><strong>Asfixia por obstrucción:</strong> aquí la ventilación es crítica. Un RCP que no proporciona ventilaciones efectivas no resuelve el problema de oxigenación.</li>
-      </ul>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">Los errores más frecuentes</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Desafortunadamente, la mayoría de las personas que aprenden RCP en cursos básicos cometen errores recurrentes cuando enfrentan una emergencia real:
-      </p>
-      <ul class="list-disc list-inside text-gray-600 space-y-3 mb-8 pl-4">
-        <li><strong>Compresiones demasiado lentas.</strong> El ritmo baja de 100 por minuto y se pierde el efecto de perfusión.</li>
-        <li><strong>Compresiones demasiado superficiales.</strong> Por miedo a lastimar a la víctima, se comprime menos de 4 cm.</li>
-        <li><strong>Apoyarse sobre el pecho.</strong> No se permite el recoil completo, lo que reduce el retorno venoso y el volumen de sangre circulante.</li>
-        <li><strong>Ventilaciones excesivas.</strong> Se insufla demasiado aire, lo que aumenta la presión intratorácica y reduce el retorno venoso al corazón.</li>
-        <li><strong>Interrupciones prolongadas.</strong> Se deja de comprimir para "ver si respira" o para buscar el teléfono. Cada pausa de más de 10 segundos es perjudicial.</li>
-      </ul>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">¿Cómo se practica?</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        La única forma de aprender RCP de alta calidad es practicando en un entorno controlado. Los simuladores de alta fidelidad permiten medir en tiempo real:
-      </p>
-      <ul class="list-disc list-inside text-gray-600 space-y-2 mb-4 pl-4">
-        <li>La profundidad de cada compresión</li>
-        <li>El ritmo y la frecuencia</li>
-        <li>El volumen de las ventilaciones</li>
-        <li>El porcentaje de tiempo efectivo de compresiones (fraction of chest compression time)</li>
-      </ul>
-      <p class="text-gray-600 leading-relaxed mb-8">
-        En Asesores en Emergencias usamos maniquíes con retroalimentación en tiempo real, exactamente como los que se utilizan en las certificaciones de la American Heart Association. El objetivo es que cada alumno salga de nuestros cursos con la memoria muscular correcta: no pensándolo, sino haciéndolo.
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">¿Por qué importa tanto ahora?</h2>
-      <p class="text-gray-600 leading-relaxed mb-8">
-        En México, según datos del INEGI, las enfermedades del corazón son la primera causa de muerte. Una porción significativa de esas muertes ocurre por paros cardíacos súbitos. Y la realidad es que la mayoría pasan frente a testigos que no saben cómo responder.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-8">
-        Enseñar RCP de alta calidad no es un lujo académico. Es una habilidad que salva vidas. Y como cualquier habilidad, se domina con práctica, corrección y repetición.
-      </p>
-
-      <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 mt-10">
-        <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">En resumen:</h3>
-        <ul class="space-y-2 text-gray-600">
-          <li>• RCP de alta calidad no es simplemente comprimir el pecho. Es comprimir con la profundidad, el ritmo y la técnica correctos.</li>
-          <li>• La diferencia entre hacerlo bien y solo hacerlo puede representar hasta un 50% más de probabilidades de supervivencia.</li>
-          <li>• Los errores más comunes (compresiones superficiales, ritmo lento, interrupciones largas) reducen drásticamente la efectividad.</li>
-          <li>• Solo se aprende con práctica supervisada y retroalimentación objetiva.</li>
-        </ul>
-        <p class="mt-4 text-gray-700 font-medium">
-          Si tu equipo, tu empresa o tu comunidad necesita capacitación en RCP y primeros auxilios, en Asesores en Emergencias tenemos programas diseñados para que la gente responda con seguridad y calidad cuando cuenta.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FULL ARTICLE CONTENT: DESFIBRILACIÓN TEMPRANA -->
-  <section class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-    <div class="prose prose-lg max-w-none">
-      <p class="text-xl text-gray-600 leading-relaxed mb-8 border-l-4 border-brand-red pl-6">
-        Cada año miles de mexicanos sufren un paro cardíaco súbito — el corazón deja de latir de forma abrupta y sin previo aviso. En ese momento, dos variables determinan quién vive y quién no: <strong>el tiempo</strong> y <strong>la electricidad</strong>. La desfibrilación temprana — aplicar una descarga eléctrica al corazón en los primeros minutos tras el colapso — es el acto médico más decisivo en un paro cardíaco por fibrilación ventricular o taquicardia ventricular sin pulso.
-      </p>
-
-      <div class="rounded-2xl overflow-hidden aspect-[16/9] mb-10">
-        <img src="assets/images/desfibrilacion-temprana/dea-uso.jpg" alt="Uso del DEA en escenario real" class="w-full h-full object-cover">
-      </div>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">¿Qué es la desfibrilación y por qué funciona?</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Para entenderlo, hay que entender primero qué le pasa al corazón durante un paro de este tipo.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        El corazón funciona con electricidad. Las células del miocardio se contraen de forma coordinada porque un marcapasos natural — el nodo sinusal — envía señales eléctricas que viajan por las aurículas y los ventrículos en un orden preciso. Ese ritmo sincronizado genera el latido que bombea sangre hacia todo el cuerpo.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Cuando esa señal se desorganiza, aparece la fibrilación ventricular: los ventrículos tiemblan en lugar de contraerse, no hay bombeo efectivo, y el cerebro deja de recibir flujo sanguíneo en segundos. En esta situación, la única forma de restaurar el ritmo es con una descarga eléctrica controlada. Esa descarga <strong>resetea</strong> la actividad eléctrica del corazón y le da al marcapasos natural la oportunidad de recuperar el control.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-6">
-        A eso le llamamos <strong>desfibrilación</strong>.
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">La ventana dorada: cada minuto reduce supervivencia un 10%</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Y aquí viene el dato que nunca hay que olvidar:
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-6">
-        <strong>Por cada minuto que pasa sin desfibrilación, la probabilidad de supervivencia baja entre un 7% y un 10%.</strong>
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Después de 10 minutos sin atención, las probabilidades son prácticamente nulas en la mayoría de los escenarios. No es exageración — es biología. El cerebro sin flujo sanguíneo empieza a sufrir daño irreversible en cuestión de minutos.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        La American Heart Association (AHA) lo plantea en términos de cadena de supervivencia:
-      </p>
-      <ol class="list-decimal list-inside text-gray-600 space-y-3 mb-8 pl-4">
-        <li>Reconocer el colapso y llamar al 911</li>
-        <li>Iniciar RCP de alta calidad de inmediato</li>
-        <li>Desfibrilar lo antes posible</li>
-        <li>Brindar atención avanzada</li>
-      </ol>
-      <p class="text-gray-600 leading-relaxed mb-6">
-        El eslabón más débil en esa cadena en México es casi siempre el tercero. El tiempo promedio de llegada de los servicios de emergencia en zonas urbanas supera los 10-15 minutos. En zonas rurales, puede ser mucho peor.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-8">
-        Eso significa que <strong>la desfibrilación casi siempre depende de quien está presente en el momento del colapso</strong>: un familiar, un compañero de trabajo, un espectador en la calle.
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">RCP sí, pero no basta sin la descarga</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Existe un mito peligroso: que el RCP por sí solo puede salvar una vida en un paro por fibrilación ventricular.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        El RCP mantiene al paciente en posibilidad de sobrevivir mientras llega ayuda, pero <strong>no detiene la fibrilación</strong>. Solo la desfibrilación puede restaurar un ritmo efectivo. Hacer RCP durante 20 minutos sin desfibrilar, en un corazón en fibrilación ventricular, es como mantener la puerta abierta esperando a que entre el médico — mientras el paciente se sangra dentro.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-8">
-        La secuencia correcta es: <strong>RCP inmediato + desfibrilación lo más pronto posible.</strong>
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">DEA: la tecnología que pone la desfibrilación en las manos de cualquiera</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Aquí es donde la historia cambia.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        El <strong>Desfibrilador Externo Automático (DEA)</strong> es un dispositivo que cualquier persona puede usar tras un entrenamiento corto. No requiere ser médico. No requiere ser enfermero. Lee el ritmo cardíaco de forma automática, determina si es necesario aplicar una descarga, y guía a quien lo opera con instrucciones de voz claras.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        En países como Estados Unidos, Japón y varios de Europa, los DEAs están presentes en aeropuertos, estadios, centros comerciales, escuelas y oficinas. Son parte de la infraestructura de cardioprotección, como los extintores.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-6">
-        En México, la penetración de DEAs en espacios públicos sigue siendo baja. La NOM-034-SSA3-2013 regula el equipo de desfibrilación externa automática en espacios no hospitalarios, pero la implementación es desigual y en muchos casos letra muerta. La Ley General de Salud reconoce la importancia de la desfibrilación temprana, pero no establece obligaciones claras para la instalación de DEAs en espacios con alta concentración de personas. Eso deja un vacío enorme.
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">¿Qué necesita México para cerrar la brecha?</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        La evidencia internacional es clara: los programas de desfibrilación temprana comunitaria funcionan. Ciudades que implementaron sistemas de respuesta pública con DEAs distribuidos y entrenamiento masivo en RCP vieron incrementos significativos en las tasas de supervivencia.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        El camino requiere al menos tres cosas:
-      </p>
-      <ol class="list-decimal list-inside text-gray-600 space-y-3 mb-8 pl-4">
-        <li><strong>Cultura de prevención.</strong> Que la gente entienda que un paro cardíaco no es un problema del hospital — es un problema que empieza en la calle, en la oficina, en la escuela, en la casa.</li>
-        <li><strong>Acceso a DEAs.</strong> Que los espacios públicos y privados de alta circulación cuenten con equipos accesibles y señalizados.</li>
-        <li><strong>Capacitación generalizada.</strong> Que cada vez más personas sepan hacer RCP y usar un DEA. No como privilegio de los profesionales de la salud, sino como competencia ciudadana.</li>
-      </ol>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">¿Quiénes deben formarse?</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        La respuesta honesta es: <strong>todos</strong>.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Pero hay poblaciones con prioridad inmediata:
-      </p>
-      <ul class="list-disc list-inside text-gray-600 space-y-3 mb-8 pl-4">
-        <li>Personal de empresas y corporativos</li>
-        <li>Maestros y personal escolar</li>
-        <li>Seguridad privada</li>
-        <li>Usuarios frecuentes de espacios con alta concentración: aeropuertos, estadios, centros comerciales, hoteles</li>
-        <li>Familiares de personas con enfermedad cardiovascular conocida</li>
-      </ul>
-      <p class="text-gray-600 leading-relaxed mb-8">
-        Un curso de <strong>RCP y uso del DEA</strong> toma entre 4 y 8 horas. La inversión de tiempo es mínima comparada con lo que puede significar salvar una vida — o salvar a un ser querido.
-      </p>
-
-      <h2 class="font-serif text-3xl font-bold text-gray-900 mt-10 mb-4">El llamado</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        La desfibrilación temprana no es solo un tema para paramédicos o médicos. Es un tema de sociedad.
-      </p>
-      <p class="text-gray-600 leading-relaxed mb-8">
-        Cada año que pasa sin avanzar en la cadena de supervivencia es un año en que miles de familias pierden a alguien por no haber tenido acceso a una descarga a tiempo. La buena noticia: <strong>el siguiente paso está al alcance.</strong> Un curso de RCP y DEA no solo te da herramientas — te da la tranquilidad de saber que, si ocurre, vas a poder actuar.
-      </p>
-
-      <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 mt-10">
-        <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">En resumen:</h3>
-        <ul class="space-y-2 text-gray-600">
-          <li>• La desfibrilación en los primeros minutos puede duplicar o más las probabilidades de supervivencia.</li>
-          <li>• Por cada minuto sin desfibrilación, la supervivencia se reduce entre 7% y 10%.</li>
-          <li>• El DEA es una herramienta que cualquier persona puede usar tras un entrenamiento básico.</li>
-          <li>• En México, la brecha en acceso a DEAs y capacitación es la deuda más grande de la cadena de supervivencia.</li>
-          <li>• Un curso de RCP y DEA es una inversión en tranquilidad y en capacidad de respuesta.</li>
-        </ul>
-        <p class="mt-4 text-gray-700 font-medium">
-          En Asesores en Emergencias ofrecemos cursos certificados de RCP y uso del DEA para empresas, instituciones y público general. ¿Tu equipo ya está preparado?
-        </p>
-      </div>
-    </div>
-  </section>
-
-<!-- NEWSLETTER + FOOTER WRAPPER -->
-<div class="relative" style="z-index:1">
-
-<!-- NEWSLETTER -->
-  <section class="bg-brand-red py-6 relative" style="z-index:1">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="font-serif text-xl font-bold text-white mb-2">Sigamos la conversación</h2>
-      <p class="text-white/80 mb-4 text-sm">Recibe contenido exclusivo sobre simulación clínica y educación médica de emergencia directamente en tu correo.</p>
-      <p><a href="https://www2.emergencias.com.mx" class="inline-block bg-[#111111] text-white font-semibold px-6 py-3 rounded-xl hover:bg-black transition-colors">Visita nuestra página →</a></p>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="contacto" class="bg-[#111111] text-white/60 py-12 relative z-50">
+  <footer id="contacto" class="bg-gray-900 text-white py-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid sm:grid-cols-3 gap-8 mb-8">
-        <div>
-          <div class="flex items-center gap-2 mb-3">
-            <img src="assets/logos/AsesoresEmergenciasLogo.png" alt="Asesores en Emergencias" class="h-8 brightness-0 invert">
-            <span class="font-bold text-white text-lg">Asesores en Emergencias</span>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="assets/logos/AsesoresEmergenciasLogo.png" alt="Asesores en Emergencias" class="h-8 brightness-0 invert">
+          <div>
+            <span class="font-bold text-white text-base leading-none block">Asesores en Emergencias</span>
+            <span class="text-xs text-gray-400">Blog</span>
           </div>
-          <p class="text-sm text-white/60 leading-relaxed">Educación Médica y Simulación Clínica de Alta Calidad en México y Latinoamérica.</p>
         </div>
-        <div>
-          <h4 class="font-semibold text-white text-sm mb-3">Explorar</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="https://www2.emergencias.com.mx" class="hover:text-brand-redLight transition-colors">www2.emergencias.com.mx</a></li>
-            <li><a href="#articulos" class="hover:text-brand-redLight transition-colors">Blog</a></li>
-            <li><a href="https://www2.emergencias.com.mx/oferta-educativa/calendario" class="hover:text-brand-redLight transition-colors">Cursos</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold text-white text-sm mb-3">Contacto</h4>
-          <ul class="space-y-2 text-sm">
-            <li>Querétaro, Qro., México</li>
-            <li>contacto@emergencias.com.mx</li>
-          </ul>
+        <div class="text-center md:text-right">
+          <p class="text-sm text-gray-400">jperez@emergencias.com.mx</p>
+          <p class="text-sm text-gray-400">www2.emergencias.com.mx</p>
         </div>
       </div>
-      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-xs">© 2026 Asesores en Emergencias. Todos los derechos reservados.</p>
-        <div class="flex items-center gap-4">
-          <a href="https://www.linkedin.com/in/juanmfraga/" class="text-white/40 hover:text-brand-redLight transition-colors text-sm">LinkedIn</a>
-          <a href="https://instagram.com/asesoresenemergencias" class="text-white/40 hover:text-brand-redLight transition-colors text-sm">Instagram</a>
-        </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-xs text-gray-500">© 2026 Asesores en Emergencias. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
-</div>
 </body>
 </html>
