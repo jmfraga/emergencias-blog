@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+  <title>Síndrome Coronario Agudo: reconocimiento y manejo prehospitalario | Blog Asesores en Emergencias</title>
+  <meta name="description" content="Todo lo que el personal de emergencias necesita saber sobre el Síndrome Coronario Agudo: clasificación, ECG prehospitalario, tratamiento y derivación oportuna.">
+  <meta property="og:title" content="Síndrome Coronario Agudo: reconocimiento y manejo prehospitalario">
+  <meta property="og:description" content="Clasificación, ECG prehospitalario, antiagregación plaquetaria y tiempos de derivación en SCA. Guía práctica para equipos de emergencias.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.emergencias.com.mx/sindrome-coronario-agudo.html">
+  <link rel="canonical" href="https://blog.emergencias.com.mx/sindrome-coronario-agudo.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#DC2626',
+              redLight: '#F87171',
+              redDark: '#991B1B',
+              black: '#111111',
+              white: '#FFFFFF',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-3">
+          <img src="assets/logos/AsesoresEmergenciasLogo.png" alt="Asesores en Emergencias" class="h-10">
+          <div>
+            <span class="font-bold text-gray-900 text-lg leading-none block">Asesores en Emergencias</span>
+            <span class="text-xs text-brand-red font-medium">Blog</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Artículos</a>
+          <a href="https://www2.emergencias.com.mx" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">www2.emergencias.com.mx</a>
+          <a href="#contacto" class="text-sm font-semibold bg-brand-red text-white px-4 py-2 rounded-lg hover:bg-brand-redDark transition-colors">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO IMAGE -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+    <div class="rounded-2xl overflow-hidden aspect-[16/9]">
+      <img src="assets/images/sindrome-coronario-agudo/hero.jpg" alt="Síndrome Coronario Agudo" class="w-full h-full object-cover">
+    </div>
+  </section>
+
+  <!-- ARTICLE HEADER -->
+  <section class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Emergencias Médicas</span>
+      <span class="text-xs text-gray-400">11 mayo, 2026 · Lectura de 10 min</span>
+    </div>
+    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+      Síndrome Coronario Agudo: reconocimiento y manejo prehospitalario
+    </h1>
+    <div class="flex items-center gap-3 mb-8 pb-8 border-b border-gray-100">
+      <div class="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center text-white text-xs font-bold">AE</div>
+      <span class="text-sm text-gray-700 font-medium">José Luis Pérez Espino</span>
+    </div>
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+
+    <p class="text-xl text-gray-600 leading-relaxed mb-8 border-l-4 border-brand-red pl-6">
+      El Síndrome Coronario Agudo (SCA) es una de las urgencias cardiovasculares con mayor impacto en mortalidad y morbilidad a nivel mundial. En el entorno prehospitalario, donde cada minuto cuenta, la capacidad del equipo de emergencias para reconocerlo, stratificarlo y actuar correctamente marca la diferencia entre un resultado favorable y uno devastador.
+    </p>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">¿Qué es el Síndrome Coronario Agudo?</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      El SCA engloba un grupo de condiciones clínicas caracterizadas por una	isquemia miocárdica aguda secundaria a una reducción súbita del flujo sanguíneo coronario. En su fisiopatología más frecuente, una placa de aterosclerosis se fractura o erosiona, generando la formación de un trombo que obstruye de forma parcial o total la arteria coronaria afectada.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Dependiendo del grado de obstrucción y del tiempo de evolución, el espectro clínico del SCA se divide en tres entidades con implicaciones terapéuticas distintas:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-600 space-y-3 mb-6 pl-4">
+      <li><strong>Infarto de miocardio con elevación del ST (STEMI):</strong> oclusión coronaria total y persistente. Requiere reperfusión urgente mediante intervención coronaria percutánea (ICP) primaria o, cuando esta no está disponible en tiempo, fibrinólisis.</li>
+      <li><strong>Infarto de miocardio sin elevación del ST (NSTEMI):</strong> isquemia grave con necrosis miocárdica, pero sin elevación persistente del segmento ST en el electrocardiograma.</li>
+      <li><strong>Angina inestable:</strong> isquemia aguda sin necrosis miocárdica —troponinas negativas—. Representa un estado de alto riesgo que puede evolucionar a NSTEMI o STEMI.</li>
+    </ul>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">Presentación clínica: más allá del dolor torácico</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Si bien el dolor torácico subesternal de características presivas es el síntoma cardinal del SCA, hasta un 30% de los pacientes —especialmente mujeres, diabéticos y adultos mayores— pueden presentar tableaux atípicos que dificultan el reconocimiento temprano. Las manifestaciones que deben alertar al equipo prehospitalario incluyen:
+    </p>
+    <ul class="list-disc list-inside text-gray-600 space-y-3 mb-6 pl-4">
+      <li>Dolor o molestia en epigastrio que simula indigestión</li>
+      <li>Disnea inexplicable, especialmente en reposo</li>
+      <li>Fatiga extrema de inicio súbito</li>
+      <li>Náuseas, vómitos o diaforesis sin causa aparente</li>
+      <li>Dolor que irradia a mandíbula, cuello, espalda o miembro superior izquierdo (o derecho)</li>
+      <li>Síncope o presíncope</li>
+      <li>En adultos mayores: confusión, alteración del estado mental o debilidad generalizada</li>
+    </ul>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      La guía de la Sociedad Polaca de Cardiología y la Asociación de Medicina de Emergencias de 2021 recalca que el <strong>desencadenante principal de toda la cascada diagnóstica y terapéutica en pacientes con sospecha de SCA es la presencia de molestia torácica aguda</strong>, caracterizada como dolor, presión, opresión o ardor. Sin embargo, la ausencia de dolor torácico no excluye el diagnóstico.
+    </p>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">El ECG de 12 derivaciones: la herramienta más valiosa</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      El electrocardiograma de 12 derivaciones es la herramienta diagnóstica de primera línea en la evaluación prehospitalaria del SCA. Las guías de la Sociedad Europea de Cardiología (ESC 2020) y las recomendaciones de la Association for Acute Cardiovascular Care (ACVC) coinciden en que debe obtenerse <strong>within 10 minutes of first medical contact</strong> en cualquier paciente con sospecha de SCA.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Su importancia radica en que:
+    </p>
+    <ul class="list-disc list-inside text-gray-600 space-y-3 mb-6 pl-4">
+      <li>Identifica a los pacientes con STEMI que requieren activación inmediata del laboratorio de hemodinámica</li>
+      <li>Permite la transmisión prehospitalaria al centro receptor para anticipar la recepción del paciente</li>
+      <li>Detecta arritmias letales que pueden requerir intervención durante el transporte</li>
+      <li>El ECG puede ser normal en más del 30% de los pacientes con SCA, por lo que un trace normal no descarta el diagnóstico en presencia de alta sospecha clínica</li>
+    </ul>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      La telecardiología —transmisión del ECG y datos clínicos al centro de destino— es una herramienta validada que permite coordinar la activación temprana del equipo de hemodinámica, reduciendo significativamente los tiempos de puerta-aguja o puerta-balón.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Según las recomendaciones actualizadas, la derivación diagnóstica de STEMI requiere elevación del ST <strong>≥1 mm en dos derivaciones contiguas</strong> en pacientes con síntomas sugestivos. En V2-V3, el punto de corte es ≥2 mm en hombres ≥40 años, o ≥2.5 mm en hombres &lt;40 años, o ≥1.5 mm en mujeres.
+    </p>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">Manejo prehospitalario: terapéutica basada en la evidencia</h2>
+
+    <h3 class="font-bold text-gray-900 mt-6 mb-3">Antiagregación plaquetaria</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      La terapia antiagregante dual —ácido acetilsalicílico (AAS) más un inhibidor del receptor P2Y12— es el estándar de atención en todos los pacientes con SCA, según las guías ESC 2020 y las recomendaciones de expertos de 2021.
+    </p>
+    <ul class="list-disc list-inside text-gray-600 space-y-3 mb-4 pl-4">
+      <li><strong>AAS:</strong> 150-300 mg vo (o 75-250 mg iv si la vía oral no es viable). Recomendación Clase I, nivel de evidencia A. Administración lo más temprana posible en el primer contacto médico.</li>
+      <li><strong>Prasugrel:</strong> 60 mg de carga vo (10 mg/día de mantenimiento). No recomendado en pacientes >75 años o &lt;60 kg; si es necesario, dosis de 5 mg.</li>
+      <li><strong>Ticagrelor:</strong> 180 mg de carga vo (90 mg/12h mantenimiento). Alternativa preferida en muchos protocolos por su perfil farmacocinético.</li>
+      <li><strong>Clopidogrel:</strong> 600 mg de carga vo —reservado cuando prasugrel o ticagrelor no están disponibles o están contraindicados.</li>
+    </ul>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      En STEMI, la guía ESC 2020 recomienda administrar el inhibidor P2Y12 tan pronto como se confirme el diagnóstico por ECG, idealmente en la fase prehospitalaria, para obtener una inhibición plaquetaria efectiva al momento de la intervención coronaria percutánea.
+    </p>
+
+    <h3 class="font-bold text-gray-900 mt-6 mb-3">Anticoagulación</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      La anticoagulación con heparina (no fraccionada o de bajo peso molecular) debe administrarse en todos los pacientes con SCA que sean candidatos a estrategia invasiva urgente. La elección entre heparina no fraccionada (HNF) o enoxaparina depende de los protocolos institucionales y del contexto clínico.
+    </p>
+
+    <h3 class="font-bold text-gray-900 mt-6 mb-3">Oxigenoterapia</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      La administración rutinaria de oxígeno en pacientes con saturación normal no está recomendada. Según las guías ESC 2020 y los protocolos de la American Heart Association, se debe administrar oxígeno solo cuando la saturación de oxígeno periférico (SpO₂) sea <strong>&lt;90%</strong> o el paciente presente signos de hipoxia. La hiperoxia puede ser perjudicial en pacientes con infarto agudo de miocardio no complicado.
+    </p>
+
+    <h3 class="font-bold text-gray-900 mt-6 mb-3">Manejo del dolor</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      El dolor torácico persistente o refractario en el SCA debe tratarse por dos razones: por su impacto en el bienestar del paciente y porque el dolor activa el sistema nervioso simpático, aumentando la demanda miocárdica de oxígeno. Los opioides intravenosos —fundamentalmente morfina— siguen siendo el analgésico de elección en el entorno prehospitalario para el SCA con dolor severo refractario a nitratos, según las recomendaciones de la ESC (Clase IIa, nivel de evidencia C).
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Las guías más recientes han posicionado a los nitratos sublinguales o intravenosos como primera línea para el alivio sintomático, reservando los opioides para dolor severo persistente. La nitroglicerina también tiene un rol en el manejo de la isquemia y la precarga, pero debe usarse con precaución en pacientes con hipotensión o infarto de ventrículo derecho.
+    </p>
+
+    <h3 class="font-bold text-gray-900 mt-6 mb-3">Monitoreo continuo</h3>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      El monitoreo electrocardiográfico continuo debe aplicarse inmediatamente a todo paciente con diagnóstico preliminar de SCA para la detección temprana de arritmias potencialmente letales y la posibilidad de desfibrilación oportuna si estuviera indicada.
+    </p>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">Estratificación de riesgo: por qué no todos los SCA son iguales</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      En el NSTEMI y la angina inestable, la estratificación del riesgo es fundamental para determinar la urgencia y el tipo de estrategia de revascularización. Las escalas más utilizadas en la práctica clínica incluyen las escalas <strong>TIMI</strong> y <strong>GRACE</strong>, que integran variables clínicas, electrocardiográficas y de laboratorio para clasificar a los pacientes en categorías de riesgo bajo, intermedio o alto.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Para el ámbito prehospitalario, la estratificación rápida es importante porque determina:
+    </p>
+    <ul class="list-disc list-inside text-gray-600 space-y-3 mb-6 pl-4">
+      <li>La elección del centro receptor (centros con hemodinámica disponible vs. sin ella)</li>
+      <li>La urgencia de la derivación (inmediata vs. diferida)</li>
+      <li>La anticipación de recursos en el destino (activación del equipo de hemodinámica)</li>
+    </ul>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">Derivación y tiempos objetivo</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Uno de los conceptos más críticos en el manejo del SCA es el <strong>tiempo total de isquemia</strong>: el período desde el inicio de los síntomas hasta la restauración del flujo coronario. Cada minuto de retraso implica más tejido miocárdico en riesgo de necrosis irreversible.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Las recomendaciones clave para la logística de derivación son:
+    </p>
+    <ul class="list-disc list-inside text-gray-600 space-y-3 mb-6 pl-4">
+      <li><strong>STEMI:</strong> el objetivo es conseguir un tiempo puerta-balón (first medical contact to wire) de <strong>≤90 minutos</strong>. Si la ICP primaria no puede lograrse en ≤120 minutos desde el primer contacto médico, y el paciente se presenta dentro de las primeras 12 horas de síntomas, está indicada la fibrinólisis prehospitalaria si el personal está capacitado y hay criterios de elegibilidad.</li>
+      <li><strong>NSTE-ACS de muy alto riesgo:</strong> estrategia invasiva inmediata (<strong>&lt;2 horas</strong>), idealmente con activación directa del laboratorio de hemodinámica desde el escenario prehospitalario.</li>
+      <li><strong>NSTE-ACS de alto riesgo:</strong> angiografía coronaria dentro de las <strong>24 horas</strong>, preferentemente antes de las 12 horas.</li>
+      <li><strong>NSTE-ACS de riesgo bajo:</strong> evaluación invasiva diferida (72 horas) o estrategia conservadora según guías.</li>
+    </ul>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Todos los pacientes con SCA, independientemente del subtipo y de los cambios electrocardiográficos en el momento del diagnóstico, deben ser derivados a centros con <strong>cardiología intervencionista y capacidad de hemodinámica</strong>. Los protocolos de teleconsulta prehospitalaria permiten activar al equipo de hemodinámica antes de la llegada del paciente, reduciendo los tiempos muertos intrahospitalarios.
+    </p>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">Resumen práctico para el equipo prehospitalario</h2>
+
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 my-8">
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">1. Sospecha clínica:</strong> ante todo paciente con molestia torácica aguda o síntomas sugestivos, piensa en SCA —incluso sin dolor torácico en grupos de riesgo.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">2. ECG en ≤10 minutos:</strong> obtén, interpreta y —si es posible— transmite el ECG de 12 derivaciones en los primeros 10 minutos tras el primer contacto médico.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">3. Antiagregación dual temprana:</strong> AAS + P2Y12 (prasugrel o ticagrelor) lo antes posible en el primer contacto médico.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">4. Oxígeno solo si SpO₂ &lt;90%:</strong> no suplementar rutinariamente.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">5. Anticoagulación:</strong> heparina según protocolo institucional.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">6. Alivio del dolor:</strong> nitratos sublinguales o iv para isquemia persistente; morfina iv para dolor refractario severo.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">7. Monitoreo y准备 para arritmias:</strong> cardioversor-desfibrilador listo desde el inicio.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong class="text-gray-900">8. Teleconsulta y activación temprana:</strong> transmite ECG y datos clínicos al centro receptor para anticipar la activación del equipo de hemodinámica.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        <strong class="text-gray-900">9. Derivar al centro correcto:</strong> ICP primaria = centro con hemodinámica. Todo SCA va a centro con capacidad intervencionista.
+      </p>
+    </div>
+
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">Conclusión</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      El SCA es una urgencia tiempo-dependiente donde la actuación del equipo prehospitalario tiene un impacto directo y medible en la supervivencia y la calidad de vida posterior del paciente. El reconocimiento temprano, la obtención rápida del ECG, la antiagregación plaquetaria dual inmediata, la anticoagulación, el alivio del dolor y la derivación al centro correcto con hemodinámica disponible son los pilares del manejo prehospitalario del SCA.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      La formación continua y la simulación clínica son herramientas esenciales para que los equipos de emergencias mantengan y refuercen estas competencias. En Asesores en Emergencias trabajamos con instituciones y equipos de salud para asegurar que cada eslabón de la cadena de supervivencia esté listo para actuar con precisión cuando el momento lo exige.
+    </p>
+
+    <div class="bg-brand-red/5 border border-brand-red/20 rounded-xl p-6 mt-10">
+      <p class="text-gray-800 font-medium leading-relaxed">
+        <strong class="text-brand-red">¿Quieres que tu equipo esté preparado para el manejo del SCA?</strong><br>
+        Ofrecemos cursos de Soporte Básico y Avanzado Cardiovascular (BLS/ACLS) con simulación clínica práctica. Escríbenos a <a href="mailto:jperez@emergencias.com.mx" class="text-brand-red underline">jperez@emergencias.com.mx</a> o visita <a href="https://www2.emergencias.com.mx" class="text-brand-red underline">www2.emergencias.com.mx</a>.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- BACK LINK -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+    <a href="/" class="inline-flex items-center gap-2 text-brand-red font-semibold hover:text-brand-redDark transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Ver todos los artículos
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="assets/logos/AsesoresEmergenciasLogo.png" alt="Asesores en Emergencias" class="h-8 brightness-0 invert">
+          <div>
+            <span class="font-bold text-white text-base leading-none block">Asesores en Emergencias</span>
+            <span class="text-xs text-gray-400">Blog</span>
+          </div>
+        </div>
+        <div class="text-center md:text-right">
+          <p class="text-sm text-gray-400">jperez@emergencias.com.mx</p>
+          <p class="text-sm text-gray-400">www2.emergencias.com.mx</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-xs text-gray-500">© 2026 Asesores en Emergencias. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
