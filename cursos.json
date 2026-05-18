@@ -1,0 +1,24 @@
+{
+  "cursos": [
+    {
+      "id": "blsacls",
+      "titulo": "Paquete BLS + ACLS",
+      "subtitulo": "Certificación AHA · 2 días · presencial Querétaro",
+      "fechaInicio": "2026-05-23",
+      "fechaTexto": "23–24 may 2026",
+      "url": "https://info.emergencias.com.mx/blsacls/",
+      "eyebrow": "Certificación AHA",
+      "estado": "abierto"
+    },
+    {
+      "id": "scpa",
+      "titulo": "Heartsaver RCP y DEA",
+      "subtitulo": "Primeros auxilios · adultos, niños y lactantes",
+      "fechaInicio": "2026-06-15",
+      "fechaTexto": "Próximas fechas · jun 2026",
+      "url": "https://info.emergencias.com.mx/scpa/",
+      "eyebrow": "Heartsaver AHA",
+      "estado": "abierto"
+    }
+  ]
+}
