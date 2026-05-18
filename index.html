@@ -65,8 +65,18 @@
     </div>
   </header>
 
+  <!-- WRAPPER: contenido + sidebar de cursos -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col lg:grid lg:grid-cols-[1fr,300px] lg:gap-10">
+
+      <!-- Sidebar mount (orden DOM primero para mobile-arriba; lg lo lleva a la derecha) -->
+      <aside id="sidebar-cursos-mount" class="order-1 lg:order-2 lg:py-10 mt-4 mb-2 lg:mt-0 lg:mb-0"></aside>
+
+      <!-- Columna principal -->
+      <div class="order-2 lg:order-1 lg:col-start-1 lg:row-start-1 min-w-0">
+
   <!-- INTRO -->
-  <section class="max-w-4xl mx-auto px-4 sm:px-6 py-16 text-center">
+  <section class="py-12 lg:py-16 text-center">
     <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
       Blog de Asesores en Emergencias
     </h1>
@@ -76,7 +86,7 @@
   </section>
 
   <!-- ARTICLES GRID -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-20">
+  <section class="pb-20">
     <div class="grid sm:grid-cols-2 gap-8">
 
       <!-- Card: Síndrome Coronario Agudo -->
@@ -190,6 +200,10 @@
     </div>
   </section>
 
+      </div><!-- /columna principal -->
+    </div><!-- /grid -->
+  </div><!-- /wrapper max-w-6xl -->
+
   <!-- FOOTER -->
   <footer id="contacto" class="bg-gray-900 text-white py-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -212,5 +226,23 @@
     </div>
   </footer>
 
+<!-- Sidebar de cursos: carga el partial compartido -->
+<script>
+  (function(){
+    const m = document.getElementById('sidebar-cursos-mount');
+    if (!m) return;
+    fetch('/partials/sidebar-cursos.html', { cache: 'no-cache' })
+      .then(function(r){ return r.ok ? r.text() : Promise.reject(r.status); })
+      .then(function(html){
+        m.innerHTML = html;
+        m.querySelectorAll('script').forEach(function(s){
+          const n = document.createElement('script');
+          if (s.src) n.src = s.src; else n.text = s.text;
+          s.replaceWith(n);
+        });
+      })
+      .catch(function(){ /* noscript fallback applies */ });
+  })();
+</script>
 </body>
 </html>
