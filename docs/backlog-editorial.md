@@ -80,7 +80,7 @@ Cada tema lista: título tentativo SEO-friendly, audiencia primaria, ángulo, en
 - **Keyword principal**: "EVC ictus FAST atención prehospitalaria".
 - **Prioridad**: baja.
 
-### 10. Errores comunes al hacer compresiones torácicas (y cómo el feedback en tiempo real los corrige)
+### 10. Errores comunes al hacer compresiones torácicas (y cómo el feedback en tiempo real los corrige) [PUBLICADO 2026-06-15]
 - **Audiencia**: instructores AHA, jefes de programa, brigadas activas que ya están certificadas pero quieren mejorar calidad.
 - **Ángulo**: tasa, profundidad, retroceso completo, fracción de compresión — los 4 errores que matan la calidad de RCP aún en personal certificado. Cómo los maniquíes con retroalimentación visual cierran la brecha. Apoya el post existente de RCP de alta calidad con foco operativo.
 - **Enganche con landings**: `/blsacls/` (formación inicial) + futura oferta de re-certificación corta. Cross-link al post "RCP de alta calidad".
