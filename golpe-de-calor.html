@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+  <title>Golpe de calor: cuándo sospecharlo y cómo actuar a tiempo | Blog Asesores en Emergencias</title>
+  <meta name="description" content="El golpe de calor es una urgencia médica mortal. Conoce las diferencias con el agotamiento por calor, los signos de alarma y los pasos para actuar a tiempo.">
+  <meta property="og:title" content="Golpe de calor: cuándo sospecharlo y cómo actuar a tiempo">
+  <meta property="og:description" content="El golpe de calor es una urgencia médica mortal. Conoce las diferencias con el agotamiento por calor, los signos de alarma y los pasos para actuar a tiempo.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.emergencias.com.mx/golpe-de-calor.html">
+  <meta property="og:image" content="https://blog.emergencias.com.mx/assets/images/golpe-de-calor/hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta name="twitter:image" content="https://blog.emergencias.com.mx/assets/images/golpe-de-calor/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://blog.emergencias.com.mx/golpe-de-calor.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#DC2626',
+              redLight: '#F87171',
+              redDark: '#991B1B',
+              black: '#111111',
+              white: '#FFFFFF',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+    footer#contacto { position: relative; z-index: 10; }
+    article h2, section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #111827; line-height: 1.25; }
+    article h3, section h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #111827; line-height: 1.3; }
+    article h1, section h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 2.25rem; font-weight: 800; margin-top: 1rem; margin-bottom: 1.5rem; color: #111827; line-height: 1.15; }
+    article p, section p { font-size: 1.0625rem; line-height: 1.75; margin-bottom: 1.25rem; color: #374151; }
+    article ul, article ol, section ul, section ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+    article ul, section ul { list-style: disc; }
+    article ol, section ol { list-style: decimal; }
+    article li, section li { font-size: 1.0625rem; line-height: 1.75; margin-bottom: 0.5rem; color: #374151; }
+    article li > p, section li > p { margin-bottom: 0.5rem; }
+    article strong, section strong { font-weight: 700; color: #111827; }
+    article em, section em { font-style: italic; }
+    article a, section a { color: #DC2626; text-decoration: underline; text-underline-offset: 2px; }
+    article a:hover, section a:hover { color: #991B1B; }
+    article blockquote, section blockquote { border-left: 4px solid #DC2626; padding-left: 1.5rem; margin: 1.5rem 0; font-style: italic; color: #4B5563; }
+    article code, section code { background: #F3F4F6; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.875em; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-3">
+          <img src="assets/logos/AsesoresEmergenciasLogo.png" alt="Asesores en Emergencias" class="h-10">
+          <div>
+            <span class="font-bold text-gray-900 text-lg leading-none block">Asesores en Emergencias</span>
+            <span class="text-xs text-brand-red font-medium">Blog</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">Artículos</a>
+          <a href="https://www2.emergencias.com.mx" class="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors">www2.emergencias.com.mx</a>
+          <a href="#contacto" class="text-sm font-semibold bg-brand-red text-white px-4 py-2 rounded-lg hover:bg-brand-redDark transition-colors">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- WRAPPER: contenido + sidebar de cursos -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:py-12">
+    <div class="flex flex-col lg:grid lg:grid-cols-[1fr,280px] lg:gap-10">
+      <aside id="sidebar-cursos-mount" class="order-1 lg:order-2 lg:py-2 mb-2 lg:mb-0"></aside>
+      <div class="order-2 lg:order-1 min-w-0">
+
+  <!-- ARTICLE HEADER -->
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="text-xs font-semibold text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Emergencias</span>
+      <span class="text-xs text-gray-400">22 junio, 2026 · Lectura de 6 min</span>
+    </div>
+    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+      Golpe de calor: cuándo sospecharlo y cómo actuar a tiempo
+    </h1>
+    <div class="flex items-center gap-3 mb-8 pb-8 border-b border-gray-100">
+      <div class="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center text-white text-xs font-bold">JE</div>
+      <span class="text-sm text-gray-700 font-medium">José Luis Pérez Espino</span>
+    </div>
+  </section>
+
+  <!-- HERO IMAGE -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 mb-8">
+    <img src="assets/images/golpe-de-calor/hero.jpg" alt="Golpe de calor: cómo identificarlo y actuar a tiempo" class="w-full rounded-xl shadow-lg object-cover aspect-video">
+  </div>
+
+  <!-- ARTICLE BODY -->
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+
+    <p class="text-xl text-gray-600 leading-relaxed mb-8 border-l-4 border-brand-red pl-6">
+      El golpe de calor es una de las emergencias más riesgosas del verano, y lo más peligroso es que muchas veces no se reconoce a tiempo. A diferencia del agotamiento por calor, el golpe de calor puede ser fatal en cuestión de minutos si no se actúa rápido.
+    </p>
+
+    <div class="prose prose-lg max-w-none space-y-6 text-gray-700 leading-relaxed">
+
+<h2>¿Qué es el golpe de calor?</h2>
+<p>
+  Es una elevación peligrosa de la temperatura corporal, generalmente <strong>por encima de 40 °C</strong>, causada por exposición prolongada a altas temperaturas o esfuerzo físico intenso en ambientes calurosos. Cuando el cuerpo pierde la capacidad de regular su temperatura, los mecanismos de enfriamiento —sudoración, vasodilatación— fallan.
+</p>
+<p>
+  <strong>Es una urgencia médica.</strong> A partir de 40 °C begin a haber daño celular; por encima de 41-42 °C el riesgo de muerte aumenta considerablemente.
+</p>
+
+<h2>Golpe de calor vs. agotamiento por calor: no es lo mismo</h2>
+
+<div class="my-6">
+  <img src="assets/images/golpe-de-calor/comparativa.jpg" alt="Comparativa entre agotamiento por calor y golpe de calor" class="w-full rounded-lg shadow-md">
+</div>
+
+<div class="overflow-x-auto my-6">
+  <table class="w-full text-sm border-collapse">
+    <thead>
+      <tr class="bg-gray-50">
+        <th class="text-left p-3 border border-gray-200 font-semibold text-gray-700"></th>
+        <th class="text-left p-3 border border-gray-200 font-semibold text-gray-700">Agotamiento por calor</th>
+        <th class="text-left p-3 border border-gray-200 font-semibold text-brand-red">Golpe de calor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="p-3 border border-gray-200 font-medium text-gray-700">Temperatura corporal</td>
+        <td class="p-3 border border-gray-200 text-gray-600">Normal o hasta 39 °C</td>
+        <td class="p-3 border border-gray-200 font-bold text-gray-900"><strong>≥ 40 °C</strong></td>
+      </tr>
+      <tr class="bg-gray-50/50">
+        <td class="p-3 border border-gray-200 font-medium text-gray-700">Piel</td>
+        <td class="p-3 border border-gray-200 text-gray-600">Sudoración abundante, pálida y húmeda</td>
+        <td class="p-3 border border-gray-200 font-bold text-gray-900"><strong>Seca y caliente</strong> (puede o no sudor)</td>
+      </tr>
+      <tr>
+        <td class="p-3 border border-gray-200 font-medium text-gray-700">Estado de conciencia</td>
+        <td class="p-3 border border-gray-200 text-gray-600">Mareo, debilidad, náusea</td>
+        <td class="p-3 border border-gray-200 font-bold text-gray-900"><strong>Confusión, alteración, pérdida de conciencia</strong></td>
+      </tr>
+      <tr class="bg-gray-50/50">
+        <td class="p-3 border border-gray-200 font-medium text-gray-700">Pulsos</td>
+        <td class="p-3 border border-gray-200 text-gray-600">Débiles y rápidos</td>
+        <td class="p-3 border border-gray-200 text-gray-600">Fuertes al inicio, luego débiles</td>
+      </tr>
+      <tr>
+        <td class="p-3 border border-gray-200 font-medium text-gray-700">¿Qué hacer?</td>
+        <td class="p-3 border border-gray-200 text-gray-600">Hidratar, frescura, reposo</td>
+        <td class="p-3 border border-gray-200 font-bold text-brand-red"><strong>Llamar a emergencias de inmediato</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+  La diferencia clave: <strong>en el agotamiento por calor la persona suda; en el golpe de calor deja de sudar y su piel está caliente y seca.</strong>
+</p>
+
+<h2>Signos de alarma</h2>
+
+<div class="my-6">
+  <img src="assets/images/golpe-de-calor/signos-alarma.jpg" alt="Signos de alarma del golpe de calor" class="w-full rounded-lg shadow-md">
+</div>
+
+<p>Busca cualquiera de estos:</p>
+<ul>
+  <li><strong>Temperatura corporal ≥ 40 °C</strong> (si puedes medirla)</li>
+  <li>Piel caliente, seca o ligeramente húmeda</li>
+  <li>Pulso rápido y fuerte</li>
+  <li>Respiración agitada</li>
+  <li><strong>Alteración del estado mental:</strong> confusión, irritabilidad, habla incoherente, comportamiento extraño</li>
+  <li><strong>Pérdida de conciencia</strong> (incluso breve)</li>
+  <li>Convulsiones</li>
+  <li>Vómitos persistentes</li>
+</ul>
+
+<h2>¿Quién está en mayor riesgo?</h2>
+<ul>
+  <li><strong>Menores de 5 años y adultos mayores de 65</strong></li>
+  <li>Personas con enfermedades crónicas: cardiacas, respiratorias, renales, diabetes</li>
+  <li>Personas que toman medicamentos: antihipertensivos, diuréticos, antidepresivos</li>
+  <li>Trabajadores al aire libre: constructores, repartidores, agricultores</li>
+  <li><strong>Atletas</strong> que entrenan o compiten en ambientes calurosos</li>
+  <li>Personas con obesidad o fiebre por otra causa</li>
+</ul>
+
+<h2>Qué hacer (y qué NO hacer)</h2>
+
+<div class="my-6">
+  <img src="assets/images/golpe-de-calor/primeros-auxilios.jpg" alt="Primeros auxilios para golpe de calor" class="w-full rounded-lg shadow-md">
+</div>
+
+<h3>Pasos inmediatos</h3>
+<ol>
+  <li><strong>Llama a emergencias (911 o tu servicio local)</strong> — el golpe de calor requiere atención médica profesional.</li>
+  <li><strong>Mueve a la persona a un lugar fresco y sombreado</strong>, con aire o ventilación.</li>
+  <li><strong>Inicia enfriamiento activo:</strong>
+    <ul>
+      <li>Aplica hielo o compresas frías en: <strong>cuello, axilas, ingles</strong> (zonas de grandes vasos sanguíneos).</li>
+      <li>Rocía agua fresca sobre la piel.</li>
+      <li>Abanica o ventila agresivamente.</li>
+    </ul>
+  </li>
+  <li><strong>Si está consciente y puede beber</strong>, ofrece agua fresca en pequeños sorbos. <strong>No forzar.</strong></li>
+  <li><strong>No dejes de enfriamiento hasta que llegue la atención médica.</strong></li>
+</ol>
+
+<h3>Lo que NO debes hacer</h3>
+<ul>
+  <li>❌ Dar aspirina o paracetamol (no resuelven el problema y pueden empeorar).</li>
+  <li>❌ Dejar sola a la persona.</li>
+  <li>❌ Dar líquidos si está inconsciente o tiene alterada la conciencia.</li>
+  <li>❌ Enfriar demasiado rápido (hipotermia iatrogénica).</li>
+  <li>❌ Esperar a ver si "se mejora solo".</li>
+</ul>
+
+<h2>¿Cuándo sospechar que es golpe de calor y no agotamiento?</h2>
+<p>
+  La regla simple: <strong>si la piel está caliente y seca Y hay cualquier alteración neurológica</strong> —confusión, irritabilidad, pérdida de conciencia—, <strong>es golpe de calor hasta que se demuestre lo contrario.</strong>
+</p>
+<p>
+  El agotamiento por calor mejora en 30 minutos con hidratación y frescura. <strong>Si no hay mejora rápida, es golpe de calor.</strong>
+</p>
+
+<h2>Prevención: lo que puedes hacer desde hoy</h2>
+
+<div class="my-6">
+  <img src="assets/images/golpe-de-calor/prevencion.jpg" alt="Consejos de prevención para golpe de calor" class="w-full rounded-lg shadow-md">
+</div>
+
+<ul>
+  <li><strong>Hidratarse</strong> antes de tener sed, especialmente si trabajas al aire libre o haces ejercicio.</li>
+  <li><strong>Evitar la exposición</strong> al sol en las horas más intensas (generalmente 11:00 a 16:00).</li>
+  <li>Usar ropa ligera, de colores claros y tejidos transpirables.</li>
+  <li><strong>Nunca dejar a niños, adultos mayores o mascotas</strong> dentro de un vehículo estacionado, ni siquiera con las ventanas abiertas.</li>
+  <li>Acostumbrar al cuerpo gradualmente a ambientes calurosos (periodo de aclimatación de 7 a 14 días para atletas o trabajadores).</li>
+  <li>Conocer los medicamentos que aumentan el riesgo y tenerlos identificados.</li>
+</ul>
+
+    </div>
+
+<div class="bg-brand-red/5 border border-brand-red/20 rounded-xl p-6 mt-10">
+  <p class="text-gray-800 font-medium leading-relaxed">
+    <strong class="text-brand-red">¿Quieres estar preparado para actuar en cualquier emergencia?</strong><br>
+    En Asesores en Emergencias ofrecemos cursos de primeros auxilios y RCP diseñados para que sepas exactamente qué hacer cuando cada segundo cuenta. Consulta fechas y modalidades en <a href="https://info.emergencias.com.mx/" class="text-brand-red underline">nuestros cursos</a>.
+  </p>
+</div>
+
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2 mt-8">
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">golpe de calor</span>
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">emergencias por calor</span>
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">primeros auxilios</span>
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">prevención</span>
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">verano</span>
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">urgencia médica</span>
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">hipertermia</span>
+      <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red">capacitación</span>
+    </div>
+
+  </section>
+
+  <!-- BACK LINK -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+    <a href="/" class="inline-flex items-center gap-2 text-brand-red font-semibold hover:text-brand-redDark transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Ver todos los artículos
+    </a>
+  </div>
+
+      </div><!-- /columna principal -->
+    </div><!-- /grid -->
+  </div><!-- /wrapper -->
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="assets/logos/AsesoresEmergenciasLogo.png" alt="Asesores en Emergencias" class="h-8 brightness-0 invert">
+          <div>
+            <span class="font-bold text-white text-base leading-none block">Asesores en Emergencias</span>
+            <span class="text-xs text-gray-400">Blog</span>
+          </div>
+        </div>
+        <div class="text-center md:text-right">
+          <p class="text-sm text-gray-400">jperez@emergencias.com.mx</p>
+          <p class="text-sm text-gray-400">www2.emergencias.com.mx</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-xs text-gray-500">© 2026 Asesores en Emergencias. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- Sidebar de cursos: carga el partial compartido -->
+<script>
+  (function(){
+    var m = document.getElementById('sidebar-cursos-mount');
+    if (!m) return;
+    fetch('/partials/sidebar-cursos.html', { cache: 'no-cache' })
+      .then(function(r){ return r.ok ? r.text() : Promise.reject(r.status); })
+      .then(function(html){
+        m.innerHTML = html;
+        m.querySelectorAll('script').forEach(function(s){
+          var n = document.createElement('script');
+          if (s.src) n.src = s.src; else n.text = s.text;
+          s.replaceWith(n);
+        });
+      })
+      .catch(function(){ /* noscript fallback applies */ });
+  })();
+</script>
+
+</body>
+</html>
