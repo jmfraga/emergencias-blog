@@ -17,6 +17,7 @@ Mantenimiento: este índice se regenera automáticamente cuando se publica un po
 - [RCP de alta calidad](https://blog.emergencias.com.mx/rcp-alta-calidad.html): La diferencia entre hacerla bien y solo hacerla puede representar hasta 50% más de probabilidades de supervivencia.
 - [RCP en lactantes y niños: qué cambia respecto al adulto](https://blog.emergencias.com.mx/rcp-lactantes-ninos.html): Diferencias críticas en compresiones, ventilaciones, profundidad y ritmo para emergencias pediátricas.
 - [Primeros auxilios en el hogar: qué hacer antes de que llegue la ambulancia](https://blog.emergencias.com.mx/primeros-auxilios-hogar.html): Evaluación, llamado correcto, control de hemorragias, posición de recuperación.
+- [Emergencias de verano: cómo actuar cuando el calor se pasa de raya](https://blog.emergencias.com.mx/emergencias-verano.html): Quemaduras solares, contacto, fogatas, golpe de calor, deshidratación, ahogamiento y picaduras. Guía completa para disfrutar el verano con seguridad.
 - [Golpe de calor: urgencia médica mortal](https://blog.emergencias.com.mx/golpe-de-calor.html): Diferencias con el agotamiento por calor, signos de alarma y pasos para actuar a tiempo.
 
 ## Otros recursos
