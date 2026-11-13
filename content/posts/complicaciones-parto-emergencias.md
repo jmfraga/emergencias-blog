@@ -9,7 +9,7 @@ category: Emergencias Médicas
 tag: [obstetricia, parto, emergencias, salud maternal, primeros auxilios]
 excerpt: "Las complicaciones durante el parto pueden poner en riesgo la vida de la madre y del recién nacido. Conoce las más frecuentes y cómo actuar como primer respondiente."
 coverImage: ./assets/images/complicaciones-parto-hero.jpg
-status: draft
+status: published
 ---
 
 # Complicaciones más comunes durante el parto: Guía para personal de salud de primer contacto
